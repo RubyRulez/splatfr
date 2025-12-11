@@ -35,7 +35,7 @@ const Index = () => {
       {/* Header Row with Image Spots */}
  
           {/* Header */}
-          <h1 className="text-5xl font-bold tracking-tight text-foreground md:text-7xl">
+          <h1 className="text-5xl font-bold tracking-tight text-foreground text-align: center md:text-7xl">
             Splat_FR
           </h1>
 
