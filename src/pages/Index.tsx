@@ -2,8 +2,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background px-4 py-8">
-      <div className="mx-auto max-w-2xl space-y-8">
+    <div className="min-h-screen bg-background-outer p-4 md:p-8">
+      <div className="mx-auto min-h-[calc(100vh-4rem)] max-w-3xl rounded-2xl border-4 border-border bg-background p-6 md:p-8">
+        <div className="space-y-8">
       {/* Header Row with Image Spots */}
         <div className="flex items-center justify-center gap-6">
           {/* Image Spot #1 */}
@@ -58,6 +59,7 @@ const Index = () => {
             {/* Partner logos will go here */}
           </CardContent>
         </Card>
+        </div>
       </div>
     </div>
   );
