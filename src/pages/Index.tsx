@@ -33,26 +33,11 @@ const Index = () => {
       <div className="mx-auto min-h-[calc(100vh-4rem)] max-w-3xl rounded-2xl border-4 border-border bg-background p-6 md:p-8">
         <div className="space-y-8">
       {/* Header Row with Image Spots */}
-        <div className="flex items-center justify-center gap-6">
-          {/* Image Spot #1 */}
-          <Card className="border-2 border-border bg-card">
-            <CardContent className="flex h-24 w-24 items-center justify-center p-2">
-              <span className="text-xs text-muted-foreground">Image</span>
-            </CardContent>
-          </Card>
-
+ 
           {/* Header */}
           <h1 className="text-5xl font-bold tracking-tight text-foreground md:text-7xl">
             Splat_FR
           </h1>
-
-          {/* Image Spot #2 */}
-          <Card className="border-2 border-border bg-card">
-            <CardContent className="flex h-24 w-24 items-center justify-center p-2">
-              <span className="text-xs text-muted-foreground">Image</span>
-            </CardContent>
-          </Card>
-        </div>
 
         {/* Divider */}
         <div className="border-t-2 border-border" />
