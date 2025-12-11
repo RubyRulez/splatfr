@@ -4,26 +4,30 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background px-4 py-8">
       <div className="mx-auto max-w-2xl space-y-8">
-        {/* Image Spot #1 */}
-        <Card className="border-2 border-border bg-card">
-          <CardContent className="flex h-48 items-center justify-center p-6">
-            <span className="text-muted-foreground">Image Placeholder</span>
-          </CardContent>
-        </Card>
+      {/* Header Row with Image Spots */}
+        <div className="flex items-center justify-center gap-6">
+          {/* Image Spot #1 */}
+          <Card className="border-2 border-border bg-card">
+            <CardContent className="flex h-24 w-24 items-center justify-center p-2">
+              <span className="text-xs text-muted-foreground">Image</span>
+            </CardContent>
+          </Card>
 
-        {/* Header */}
-        <header className="text-center">
-          <h1 className="text-6xl font-bold tracking-tight text-foreground md:text-7xl">
+          {/* Header */}
+          <h1 className="text-5xl font-bold tracking-tight text-foreground md:text-7xl">
             Splat_FR
           </h1>
-        </header>
 
-        {/* Image Spot #2 */}
-        <Card className="border-2 border-border bg-card">
-          <CardContent className="flex h-48 items-center justify-center p-6">
-            <span className="text-muted-foreground">Image Placeholder</span>
-          </CardContent>
-        </Card>
+          {/* Image Spot #2 */}
+          <Card className="border-2 border-border bg-card">
+            <CardContent className="flex h-24 w-24 items-center justify-center p-2">
+              <span className="text-xs text-muted-foreground">Image</span>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Divider */}
+        <div className="border-t-2 border-border" />
 
         {/* Channels Section */}
         <Card className="border-2 border-border bg-card">
