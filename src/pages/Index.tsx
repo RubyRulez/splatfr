@@ -1,24 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
-const Spiral = ({ className }: { className?: string }) => (
-  <svg
-    viewBox="0 0 100 100"
-    fill="none"
-    className={className}
-  >
-    <path
-      d="M50 50 C50 40 60 40 60 50 C60 60 40 60 40 50 C40 35 65 35 65 50 C65 65 35 65 35 50 C35 30 70 30 70 50 C70 70 30 70 30 50 C30 25 75 25 75 50 C75 75 25 75 25 50 C25 20 80 20 80 50"
-      stroke="white"
-      strokeWidth="2"
-      strokeLinecap="round"
-      opacity="0.6"
-    />
-  </svg>
-);
-
+const Spiral = ({
+  className
+}: {
+  className?: string;
+}) => <svg viewBox="0 0 100 100" fill="none" className={className}>
+    <path d="M50 50 C50 40 60 40 60 50 C60 60 40 60 40 50 C40 35 65 35 65 50 C65 65 35 65 35 50 C35 30 70 30 70 50 C70 70 30 70 30 50 C30 25 75 25 75 50 C75 75 25 75 25 50 C25 20 80 20 80 50" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.6" />
+  </svg>;
 const Index = () => {
-  return (
-    <div className="relative min-h-screen overflow-hidden bg-background-outer p-4 md:p-8">
+  return <div className="relative min-h-screen overflow-hidden bg-background-outer p-4 md:p-8">
       {/* Decorative Spirals */}
       <Spiral className="absolute left-2 top-12 h-16 w-16" />
       <Spiral className="absolute left-8 top-1/3 h-24 w-24" />
@@ -35,7 +24,7 @@ const Index = () => {
       {/* Header Row with Image Spots */}
  
           {/* Header */}
-          <h1 className="text-5xl font-bold tracking-tight text-foreground text-align: center md:text-7xl">
+          <h1 className="text-5xl font-bold tracking-tight text-foreground text-align: center md:text-7xl text-center">
             Splat_FR
           </h1>
 
@@ -73,8 +62,6 @@ const Index = () => {
         </Card>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
