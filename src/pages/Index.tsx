@@ -87,8 +87,11 @@ const Index = () => {
           <CardHeader>
             <CardTitle className="text-2xl font-semibold text-foreground">Channels</CardTitle>
           </CardHeader>
-          <CardContent className="min-h-32">
-            {/* Channel links will go here */}
+          <CardContent>
+            <a href="https://youtube.com/@splat_fr" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+              <span className="font-bold">Youtube - </span>
+              <span className="underline">@splat_fr</span>
+            </a>
           </CardContent>
         </Card>
 
