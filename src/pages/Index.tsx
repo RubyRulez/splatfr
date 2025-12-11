@@ -28,7 +28,7 @@ const Index = () => {
       <Spiral className="absolute bottom-8 right-2 h-10 w-10" />
       <Spiral className="absolute left-1/4 top-4 h-10 w-10 md:left-12" />
       <SquareSpiral className="absolute left-16 top-8 h-12 w-12" />
-      <SquareSpiral className="absolute right-12 top-1/4 h-18 w-18" />
+      
       <SquareSpiral className="absolute left-6 bottom-1/3 h-14 w-14" />
       <SquareSpiral className="absolute right-8 bottom-16 h-10 w-10" />
       <SquareSpiral className="absolute left-1/3 bottom-8 h-16 w-16" />
