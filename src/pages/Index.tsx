@@ -34,6 +34,19 @@ const Index = () => {
       <SquareSpiral className="absolute left-1/3 bottom-8 h-16 w-16" />
       <SquareSpiral className="absolute right-1/3 top-16 h-12 w-12" />
       <Spiral className="absolute bottom-4 right-1/4 h-16 w-16 md:right-16" />
+      
+      {/* Additional smaller spirals spread along sides */}
+      <Spiral className="absolute left-1 top-24 h-6 w-6" />
+      <Spiral className="absolute left-3 top-2/3 h-8 w-8" />
+      <Spiral className="absolute left-10 bottom-12 h-6 w-6" />
+      <SquareSpiral className="absolute left-2 top-1/2 h-8 w-8" />
+      <SquareSpiral className="absolute left-12 bottom-40 h-6 w-6" />
+      
+      <Spiral className="absolute right-1 top-32 h-8 w-8" />
+      <Spiral className="absolute right-12 top-2/3 h-6 w-6" />
+      <Spiral className="absolute right-3 bottom-1/3 h-8 w-8" />
+      <SquareSpiral className="absolute right-2 top-40 h-6 w-6" />
+      <SquareSpiral className="absolute right-14 bottom-24 h-8 w-8" />
       <div className="mx-auto min-h-[calc(100vh-4rem)] max-w-3xl rounded-2xl border-4 border-border bg-background p-6 md:p-8">
         <div className="space-y-8">
       {/* Header Row with Image Spots */}
