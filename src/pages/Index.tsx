@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const spiralPaths = {
   tight: "M50 50 C50 45 55 45 55 50 C55 55 45 55 45 50 C45 42 58 42 58 50 C58 58 42 58 42 50 C42 39 61 39 61 50 C61 61 39 61 39 50 C39 36 64 36 64 50 C64 64 36 64 36 50 C36 33 67 33 67 50 C67 67 33 67 33 50 C33 30 70 30 70 50 C70 70 30 70 30 50 C30 27 73 27 73 50 C73 73 27 73 27 50",
@@ -88,10 +89,16 @@ const Index = () => {
             <CardTitle className="text-2xl font-semibold text-foreground">Channels</CardTitle>
           </CardHeader>
           <CardContent>
-            <a href="https://youtube.com/@splat_fr" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
-              <span className="font-bold">Youtube - </span>
-              <span className="underline">@splat_fr</span>
-            </a>
+            <Button 
+              asChild 
+              variant="outline" 
+              className="transition-transform duration-200 hover:scale-95"
+            >
+              <a href="https://youtube.com/@splat_fr" target="_blank" rel="noopener noreferrer">
+                <span className="font-bold">Youtube - </span>
+                <span>@splat_fr</span>
+              </a>
+            </Button>
           </CardContent>
         </Card>
 
