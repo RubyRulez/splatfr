@@ -97,3 +97,7 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+.h1 {
+text-align: center
+}
