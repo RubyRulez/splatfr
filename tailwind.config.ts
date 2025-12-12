@@ -83,10 +83,31 @@ export default {
             height: "0",
           },
         },
+        "spin-slow": {
+          from: {
+            transform: "rotate(0deg)",
+          },
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
+        "fade-pulse": {
+          "0%, 100%": {
+            opacity: "0.3",
+          },
+          "50%": {
+            opacity: "0.8",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "spin-slow": "spin-slow 20s linear infinite",
+        "spin-slower": "spin-slow 30s linear infinite",
+        "spin-reverse": "spin-slow 25s linear infinite reverse",
+        "fade-pulse": "fade-pulse 4s ease-in-out infinite",
+        "fade-pulse-slow": "fade-pulse 6s ease-in-out infinite",
       },
     },
   },
