@@ -42,35 +42,35 @@ const SquareSpiral = ({
 const Index = () => {
   return <div className="relative min-h-screen overflow-hidden bg-background-outer p-4 md:p-8">
       {/* Decorative Spirals */}
-      <Spiral className="absolute left-2 top-12 h-16 w-16" strokeWidth={1} density="tight" />
-      <Spiral className="absolute left-8 top-1/3 h-24 w-24" strokeWidth={3} density="loose" />
-      <Spiral className="absolute bottom-20 left-4 h-12 w-12" density="tight" />
-      <Spiral className="absolute bottom-1/4 left-6 h-20 w-20" strokeWidth={1.5} />
-      <Spiral className="absolute right-4 top-20 h-20 w-20" strokeWidth={3} density="loose" />
-      <Spiral className="absolute right-10 top-1/2 h-14 w-14" strokeWidth={1} density="tight" />
-      <Spiral className="absolute bottom-32 right-6 h-24 w-24" density="loose" />
-      <Spiral className="absolute bottom-8 right-2 h-10 w-10" strokeWidth={1.5} density="tight" />
-      <Spiral className="absolute left-1/4 top-4 h-10 w-10 md:left-12" strokeWidth={3} />
-      <SquareSpiral className="absolute left-16 top-8 h-12 w-12" strokeWidth={1} density="loose" />
+      <Spiral className="absolute left-2 top-12 h-16 w-16 animate-spin-slow animate-fade-pulse" strokeWidth={1} density="tight" />
+      <Spiral className="absolute left-8 top-1/3 h-24 w-24 animate-spin-reverse animate-fade-pulse-slow" strokeWidth={3} density="loose" />
+      <Spiral className="absolute bottom-20 left-4 h-12 w-12 animate-spin-slower animate-fade-pulse" density="tight" />
+      <Spiral className="absolute bottom-1/4 left-6 h-20 w-20 animate-spin-slow animate-fade-pulse-slow" strokeWidth={1.5} />
+      <Spiral className="absolute right-4 top-20 h-20 w-20 animate-spin-reverse animate-fade-pulse" strokeWidth={3} density="loose" />
+      <Spiral className="absolute right-10 top-1/2 h-14 w-14 animate-spin-slower animate-fade-pulse-slow" strokeWidth={1} density="tight" />
+      <Spiral className="absolute bottom-32 right-6 h-24 w-24 animate-spin-slow animate-fade-pulse" density="loose" />
+      <Spiral className="absolute bottom-8 right-2 h-10 w-10 animate-spin-reverse animate-fade-pulse-slow" strokeWidth={1.5} density="tight" />
+      <Spiral className="absolute left-1/4 top-4 h-10 w-10 md:left-12 animate-spin-slower animate-fade-pulse" strokeWidth={3} />
+      <SquareSpiral className="absolute left-16 top-8 h-12 w-12 animate-spin-slow animate-fade-pulse-slow" strokeWidth={1} density="loose" />
       
-      <SquareSpiral className="absolute left-6 bottom-1/3 h-14 w-14" strokeWidth={3} density="tight" />
-      <SquareSpiral className="absolute right-8 bottom-16 h-10 w-10" density="loose" />
-      <SquareSpiral className="absolute left-1/3 bottom-8 h-16 w-16" strokeWidth={1.5} />
-      <SquareSpiral className="absolute right-1/3 top-16 h-12 w-12" strokeWidth={1} density="tight" />
-      <Spiral className="absolute bottom-4 right-1/4 h-16 w-16 md:right-16" strokeWidth={3} density="loose" />
+      <SquareSpiral className="absolute left-6 bottom-1/3 h-14 w-14 animate-spin-reverse animate-fade-pulse" strokeWidth={3} density="tight" />
+      <SquareSpiral className="absolute right-8 bottom-16 h-10 w-10 animate-spin-slower animate-fade-pulse-slow" density="loose" />
+      <SquareSpiral className="absolute left-1/3 bottom-8 h-16 w-16 animate-spin-slow animate-fade-pulse" strokeWidth={1.5} />
+      <SquareSpiral className="absolute right-1/3 top-16 h-12 w-12 animate-spin-reverse animate-fade-pulse-slow" strokeWidth={1} density="tight" />
+      <Spiral className="absolute bottom-4 right-1/4 h-16 w-16 md:right-16 animate-spin-slower animate-fade-pulse" strokeWidth={3} density="loose" />
       
       {/* Additional smaller spirals spread along sides */}
-      <Spiral className="absolute left-1 top-24 h-6 w-6" strokeWidth={1} density="loose" />
-      <Spiral className="absolute left-3 top-2/3 h-8 w-8" strokeWidth={3} density="tight" />
-      <Spiral className="absolute left-10 bottom-12 h-6 w-6" density="loose" />
-      <SquareSpiral className="absolute left-2 top-1/2 h-8 w-8" strokeWidth={1.5} density="tight" />
-      <SquareSpiral className="absolute left-12 bottom-40 h-6 w-6" strokeWidth={1} />
+      <Spiral className="absolute left-1 top-24 h-6 w-6 animate-spin-slow animate-fade-pulse-slow" strokeWidth={1} density="loose" />
+      <Spiral className="absolute left-3 top-2/3 h-8 w-8 animate-spin-reverse animate-fade-pulse" strokeWidth={3} density="tight" />
+      <Spiral className="absolute left-10 bottom-12 h-6 w-6 animate-spin-slower animate-fade-pulse-slow" density="loose" />
+      <SquareSpiral className="absolute left-2 top-1/2 h-8 w-8 animate-spin-slow animate-fade-pulse" strokeWidth={1.5} density="tight" />
+      <SquareSpiral className="absolute left-12 bottom-40 h-6 w-6 animate-spin-reverse animate-fade-pulse-slow" strokeWidth={1} />
       
-      <Spiral className="absolute right-1 top-32 h-8 w-8" strokeWidth={3} density="loose" />
-      <Spiral className="absolute right-12 top-2/3 h-6 w-6" strokeWidth={1} density="tight" />
-      <Spiral className="absolute right-3 bottom-1/3 h-8 w-8" />
-      <SquareSpiral className="absolute right-2 top-40 h-6 w-6" strokeWidth={1.5} density="loose" />
-      <SquareSpiral className="absolute right-14 bottom-24 h-8 w-8" strokeWidth={3} density="tight" />
+      <Spiral className="absolute right-1 top-32 h-8 w-8 animate-spin-slower animate-fade-pulse" strokeWidth={3} density="loose" />
+      <Spiral className="absolute right-12 top-2/3 h-6 w-6 animate-spin-slow animate-fade-pulse-slow" strokeWidth={1} density="tight" />
+      <Spiral className="absolute right-3 bottom-1/3 h-8 w-8 animate-spin-reverse animate-fade-pulse" />
+      <SquareSpiral className="absolute right-2 top-40 h-6 w-6 animate-spin-slower animate-fade-pulse-slow" strokeWidth={1.5} density="loose" />
+      <SquareSpiral className="absolute right-14 bottom-24 h-8 w-8 animate-spin-slow animate-fade-pulse" strokeWidth={3} density="tight" />
       <div className="mx-auto min-h-[calc(100vh-4rem)] max-w-3xl rounded-2xl border-4 border-border bg-background p-6 md:p-8">
         <div className="space-y-8">
       {/* Header Row with Image Spots */}
